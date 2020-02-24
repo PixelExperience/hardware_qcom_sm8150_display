@@ -645,7 +645,6 @@ void HWCDisplay::BuildLayerStack() {
   display_rect_ = LayerRect();
   metadata_refresh_rate_ = 0;
   layer_stack_.flags.animating = animating_;
-  hdr_largest_layer_px_ = 0.0f;
   layer_stack_.flags.fast_path = fast_path_enabled_ && fast_path_composition_;
 
   DTRACE_SCOPED();
@@ -722,11 +721,6 @@ void HWCDisplay::BuildLayerStack() {
       // Dont honor HDR when its handling is disabled
       layer->input_buffer.flags.hdr = true;
       layer_stack_.flags.hdr_present = true;
-
-      // HDR area
-      auto hdr_layer_area = (layer->dst_rect.right - layer->dst_rect.left) *
-                            (layer->dst_rect.bottom - layer->dst_rect.top);
-      hdr_largest_layer_px_ = std::max(hdr_largest_layer_px_, hdr_layer_area);
     }
 
     if (hwc_layer->IsNonIntegralSourceCrop() && !is_secure && !hdr_layer &&

@@ -421,7 +421,6 @@ class HWCDisplay : public DisplayEventHandler {
   bool skip_commit_ = false;
   std::map<uint32_t, DisplayConfigVariableInfo> variable_config_map_;
   std::vector<uint32_t> hwc_config_map_;
-  float hdr_largest_layer_px_ = 0.0f;
   bool fast_path_composition_ = false;
 
  private:
