@@ -12,10 +12,7 @@ package {
 cc_library_shared {
     name: "libqservice",
     vendor: true,
-    defaults: [
-        "display_defaults",
-        "display_go_defaults",
-    ],
+    defaults: ["display_defaults"],
     shared_libs: ["libbinder"],
     cflags: [
         "-DLOG_TAG=\"qdqservice\"",
