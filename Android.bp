@@ -75,8 +75,8 @@ cc_library_headers {
         "libdebug",
         "libhistogram",
     ],
-    header_libs: ["libhardware_headers", "//vendor/qcom/sm8150:display_intf_headers"],
-    export_header_lib_headers: ["libhardware_headers", "//vendor/qcom/sm8150:display_intf_headers"],
+    header_libs: ["libhardware_headers", "display_intf_headers"],
+    export_header_lib_headers: ["libhardware_headers", "display_intf_headers"],
 }
 
 subdirs = [
