@@ -22,7 +22,7 @@ cc_library_shared {
         "libcutils",
         "libdl",
         "liblog",
-        "//vendor/qcom/sm8150:libqdMetaData",
+        "libqdMetaData",
     ],
     header_libs: [
         "display_headers",
