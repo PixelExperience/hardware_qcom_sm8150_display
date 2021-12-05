@@ -5,6 +5,7 @@ package {
 cc_library_shared {
     name: "libgrallocutils",
     vendor: true,
+    defaults: ["display_go_defaults"],
     srcs: [
         "gr_utils.cpp",
         "gr_adreno_info.cpp",
@@ -21,7 +22,7 @@ cc_library_shared {
         "libcutils",
         "libdl",
         "liblog",
-        "libqdMetaData",
+        "//vendor/qcom/sm8150:libqdMetaData",
     ],
     header_libs: [
         "display_headers",
