@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85959032_717706dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000080
+      },
+      "writtenOn": "2022-11-13T09:59:50Z",
+      "side": 1,
+      "message": "It causes issues with coral/flame/sunfish devices.",
+      "revId": "9f8b34250baa0e2bfc9813f7396ecdc7ce7c7631",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
